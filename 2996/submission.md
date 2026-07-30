@@ -135,7 +135,7 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+เพราะมี5ตัวอักษร
 ```
 
 Input:
@@ -167,7 +167,7 @@ Pass
 Why I chose this case:
 
 ```text
-
+เพราะมี5ตัวอักษร
 ```
 
 Input:
@@ -199,7 +199,7 @@ Pass
 Why I chose this case:
 
 ```text
-
+เพราะมี5ตัวอักษร
 ```
 
 Input:
