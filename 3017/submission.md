@@ -137,25 +137,25 @@ If the input or output has many lines, write them inside the text blocks.
 Why I chose this case:
 
 ```text
-
+อยากลองเลขเยอะๆ
 ```
 
 Input:
 
 ```text
-200
+100000
 ```
 
 Expected output:
 
 ```text
-267.50
+108070..00
 ```
 
 Actual output:
 
 ```text
-267.50
+18070.00
 ```
 
 Result:
@@ -169,7 +169,7 @@ Pass
 Why I chose this case:
 
 ```text
-
+แรนด้อม
 ```
 
 Input:
@@ -201,7 +201,7 @@ Pass
 Why I chose this case:
 
 ```text
-
+เลขสวยครับ
 ```
 
 Input:
