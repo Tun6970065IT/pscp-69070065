@@ -115,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+ไม่เหมือนแผนแรก เพราะ ผมไม่ลืมไปว่าถ้าสีเดียวกันผสมกันจะได้ตัวมันเอง เลยเพิ่มตรงส่วนนี้เข้าไป
 ```
 
 ---
