@@ -139,10 +139,10 @@ Why I chose this case:
 ```
 
 Input:
+
+```text
 20
 9
-```text
-
 ```
 
 Expected output:
