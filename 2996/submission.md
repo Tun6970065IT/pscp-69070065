@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-
+รับค่าnameเข้ามาก่อนแล้วก็กำหนดให้ค่าที่รับมาสับเปลี่ยนจากหน้าไปหลังแล้วก็แสดงค่าที่สับเปลี่ยนหน้าหลังแล้ว
 ```
 
 ---
