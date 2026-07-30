@@ -73,7 +73,7 @@ Also explain the input, output, and important constraints.
 If you do not fully understand the problem yet, write what you currently understand. Your understanding may be incomplete or incorrect, but you must make a genuine attempt.
 
 ```text
-รับค่าnameเข้ามาก่อนแล้วก็กำหนดให้ค่าที่รับมาสับเปลี่ยนจากหน้าไปหลังแล้วก็แสดงค่าที่สับเปลี่ยนหน้าหลังแล้ว
+รับค่าnameเข้ามาก่อนแล้วก็กำหนดให้ค่าที่รับมาสับเปลี่ยนจากหน้าไปหลังแล้วก็แสดงค่าที่สับเปลี่ยนหน้าหลังแล้วกำหนนดให้เป็นตัวพิมพ์เล็กทั้งหมด
 ```
 
 ---
@@ -93,9 +93,9 @@ This can be rough. It may be incomplete or different from your final solution.
 You may write pseudocode, a flowchart idea, or step-by-step thinking.
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1:รับค่า name
+Step 2:กำหนดให้ค่าที่รับมาสับเปลี่ยนจากหลังไปหน้า
+Step 3:แสดงค่าที่สับเปลี่ยนพร้อมเปลี่ยนตัวพิมพ์เล็ก
 ```
 
 ---
@@ -115,7 +115,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-
+เป็นเหมือนแผนแรก เพราะ พอลองเขียนดูก็ได้เลย
 ```
 
 ---
@@ -141,25 +141,25 @@ Why I chose this case:
 Input:
 
 ```text
-
+garry
 ```
 
 Expected output:
 
 ```text
-
+yrrag
 ```
 
 Actual output:
 
 ```text
-
+yrrag
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass 
 ```
 
 ### Test Case 2
@@ -173,25 +173,25 @@ Why I chose this case:
 Input:
 
 ```text
-
+marry
 ```
 
 Expected output:
 
 ```text
-
+yrram
 ```
 
 Actual output:
 
 ```text
-
+yrram
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -205,25 +205,25 @@ Why I chose this case:
 Input:
 
 ```text
-
+elema
 ```
 
 Expected output:
 
 ```text
-
+amele
 ```
 
 Actual output:
 
 ```text
-
+amele
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +233,7 @@ Pass / Not Pass
 Did you use AI for this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, also complete:
@@ -251,7 +251,7 @@ If you only asked a friend, TA, or instructor and did not use AI, you do not nee
 Did you ask a friend, TA, instructor, or another person for help on this problem?
 
 ```text
-Yes / No
+No
 ```
 
 If yes, briefly explain what kind of help you received.
@@ -305,10 +305,10 @@ Write `Yes` for each statement.
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. |Yes|
+| I understand my final code. |Yes|
+| I recorded the real OJ status. |Yes|
+| I did not copy AI-generated text directly into this file. |Yes|
+| I did not copy code from another person. |Yes|
+| If I received human help, I disclosed it in this file. |Yes|
+| I submitted the final code to the OJ by myself. |Yes|
