@@ -95,6 +95,7 @@ You may write pseudocode, a flowchart idea, or step-by-step thinking.
 ```text
 Step 1:รับค่า name
 Step 2:กำหนดให้ค่าที่รับมาสับเปลี่ยนจากหลังไปหน้า
+step 3:ใช้lenตรวจสอบว่ามี5ตัวไหม
 Step 3:แสดงค่าที่สับเปลี่ยนพร้อมเปลี่ยนตัวพิมพ์เล็ก
 ```
 
@@ -115,7 +116,7 @@ Do not copy AI's explanation.
 Do not copy another person's explanation.
 
 ```text
-เป็นเหมือนแผนแรก เพราะ พอลองเขียนดูก็ได้เลย
+ไม่เหมือนแผนแรก เพราะ ผมใช้lenยังไม่เป็น เลยยังไม่ใช้ แล้วลองดูใหม่โดยไม่ใช้len แล้วก็ได้เลย
 ```
 
 ---
