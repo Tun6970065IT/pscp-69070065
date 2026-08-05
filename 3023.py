@@ -1,7 +1,12 @@
 """calculator"""
 
 n = int(input())
+
 if n == 1:
-    print("1")
+    print(1)
 else:
-    print(n * 2)
+    count = 0
+    for i in range(1, n + 1):
+        count += len(str(i))
+    total_press = count + n
+    print(total_press)
