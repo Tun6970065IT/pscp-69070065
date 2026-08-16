@@ -5,8 +5,10 @@ p1 = input()
 p2 = input()
 count = 0
 for _ in range(n):
-    if int(p1[_]) + int(p2[_]) ==9:
-        print("YES")
-    else:
-        count +=1
-        print(f"NO {count}")
+    if int(p1[_]) + int(p2[_]) != 9:
+        count+=1
+
+if not count:
+    print("YES")
+else:
+    print(f"NO {count}")
