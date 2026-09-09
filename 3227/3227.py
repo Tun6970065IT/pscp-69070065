@@ -1,5 +1,5 @@
 """card"""
-def Card():
+def poker():
     """card"""
     card = input().strip().upper()
 
@@ -12,7 +12,7 @@ def Card():
         p = "jack"
     elif p == "Q":
         p = "queen"
-    elif p == "k":
+    elif p == "K":
         p = "king"
 
     if g == "D":
@@ -25,4 +25,4 @@ def Card():
         g = "clubs"
 
     print(f"{p} of {g}")
-Card()
+poker()
