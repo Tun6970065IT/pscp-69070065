@@ -1,7 +1,16 @@
 """inflation"""
-import math
-n = float(input())
-k = int(input())
+def infla():
+    """inflation"""
+    n = input()
+    k = int(input())
 
-total = n * (1+3.81/100)**k
-print(math.floor(total * 100)/100)
+    if "." in n:
+        first,end = n.split(".")
+    else:
+        first,end = n,""
+    stang = (end + "00")[:2]
+    total = int(first) * 100 + int(stang)
+    for _ in range(k):
+        total = total * 10381 // 10000
+    print(f"{total // 100}.{total % 100:02d}")
+infla()
