@@ -7,5 +7,5 @@ for _ in reversed(n):
     if not num % 3 or not num % 5:
         print(_)
     have = True
-if not have:
-    print("Nope")
+    if not have:
+        print("Nope")
