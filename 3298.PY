@@ -2,11 +2,12 @@
 
 def rabbit():
     """rabbitBUU"""
-    text = input().strip().upper()
+    text = input().strip()
+    uptext = text.upper()
     Umax = 0
     Unow = 0
     bhave = False
-    for char in text:
+    for char in uptext:
         if char =="B":
             bhave = True
             Unow = 0
@@ -20,13 +21,13 @@ def rabbit():
     if Umax >= 2:
         print(f"Yes {Umax}")
         return
-    elif "B" in text:
-        whereB = text.find("B")
-        result = text[:whereB + 1] + "U" * (len(text) - whereB -1)
+    if "B" in uptext:
+        whereB = uptext.find("B")
+        result = text[:whereB + 1] + "U" * (len(uptext) - whereB -1)
         #เปลี่ยนตัวอักษรหลังBเป็น U โดยตัวอักษรก่อนหน้าเป็นเหมือนเดิม
         print(result)
         return
-    else:
-        no_b = "BUU" * len(text)
-        print(no_b[:len(text)])
+
+    no_b = "BUU" * len(text)
+    print(no_b[:len(text)])
 rabbit()
