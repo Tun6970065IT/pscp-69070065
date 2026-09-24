@@ -20,14 +20,12 @@ def rabbit():
             Unow = 0
     if Umax >= 2:
         print(f"Yes {Umax}")
-        return
-    if "B" in uptext:
+    elif "B" in uptext:
         whereB = uptext.find("B")
         result = text[:whereB + 1] + "U" * (len(uptext) - whereB -1)
         #เปลี่ยนตัวอักษรหลังBเป็น U โดยตัวอักษรก่อนหน้าเป็นเหมือนเดิม
         print(result)
-        return
-
-    no_b = "BUU" * len(text)
-    print(no_b[:len(text)])
+    else:
+        no_b = "BUU" * len(text)
+        print(no_b[:len(text)])
 rabbit()
