@@ -9,6 +9,6 @@ def main():
         list_num.append(num)
     ans = list_num[0]
     for i in list_num[1:]:
-        ans = math.gcd(ans , num)
+        ans = math.gcd(ans , i)
     print(ans)
 main()
