@@ -6,8 +6,7 @@ def main():
     numneed = input()
     index = num.index(numneed)
     count = num.count(numneed)
-    picture = "".join([str(index)] * count)
     for _ in range(count):
-        print(picture)
+        print(*[index] * count)
 
 main()
