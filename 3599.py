@@ -9,6 +9,8 @@ def sum_of_num():
         if another == -1:
             break
         sum_num += another
+        if sum_num == num:
+            break
     print(sum_num)
 
 sum_of_num()
