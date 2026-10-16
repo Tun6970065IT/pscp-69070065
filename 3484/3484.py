@@ -6,42 +6,34 @@ def robot():
     n = int(n)
     p = float(p)
 
-    a = []
-    total_tiles = 0
+    grid = []
+    for _ in range(n):
+        line = input().split()
+        while not line:
+            line = input().split()
+        grid.append(list(map(int, line)))
+
+    col_breaks = [0] * n
+    col_points = [0] * n
+    total_breaks = 0
     total_points = 0
 
     for i in range(n):
-        row = list(map(int, input().split()))
-        a.append(row)
-
-        tiles = 0
-        points = 0
-
-        for x in row:
+        row_breaks = 0
+        row_points = 0
+        for j in range(n):
+            x = grid[i][j]
             if x > 0:
-                tiles += 1
-            points += x
+                row_breaks += 1
+                col_breaks[j] += 1
+            row_points += x
+            col_points[j] += x
+        total_breaks += row_breaks
+        total_points += row_points
+        print(*grid[i], row_breaks, row_points)
 
-        total_tiles += tiles
-        total_points += points
-
-        print(*row, tiles, points)
-
-    for j in range(n):
-        tiles = 0
-        for i in range(n):
-            if a[i][j] > 0:
-                tiles += 1
-        print(tiles, end=" ")
-    print()
-
-    for j in range(n):
-        points = 0
-        for i in range(n):
-            points += a[i][j]
-        print(points, end=" ")
-    print()
-
-    print(total_tiles, total_points, f"{total_points * p:.2f}")
+    print(*col_breaks)
+    print(*col_points)
+    print(total_breaks, total_points, f"{total_points * p:.2f}")
 
 robot()
