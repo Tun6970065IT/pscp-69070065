@@ -12,7 +12,7 @@ def main():
     for c in direct:
         if c == "R" and start + 1 < n:
             start += 1
-        elif c == "L" and start - 1 >= n:
+        elif c == "L" and start - 1 >= 0:
             start -= 1
 
         if start == chest:
