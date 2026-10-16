@@ -19,7 +19,7 @@ def main():
             print("Data Incorrect")
             return
         for i in team_score:
-            if not(0 <= i <= 100):
+            if i < 0 or i > 100:
                 print("Data Incorrect")
                 return
         teams.append(team_score)
