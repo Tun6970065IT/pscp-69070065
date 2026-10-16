@@ -1,33 +1,46 @@
 """Cuteneko"""
 
-import json
-
 def main():
     """CuteNeko"""
     n = int(input())
-    cat01 = {}
-    fox01 = {}
+    cute = {}
     for _ in range(n):
-        catsfoxs = json.loads(input())
-        for name, code in catsfoxs.items():
-            if code.startswith("Cat"):
-                cat01[name] = code
-            elif code.startswith("Fox"):
-                fox01[name] = code
-    if "Cat01" not in cat01.values():
-        cat01["Garfield"] = "Cat01"
-    if "Fox01" not in fox01.values():
-        fox01["Fubuki"] = "Fox01"
-    sorted_cats = [(code , name) for name , code in cat01.items()]
-    sorted_foxes = [(code , name) for name , code in fox01.items()]
-    sorted_cats.sort()
-    sorted_foxes.sort()
-    print(f"Cat : {len(cat01)}")
-    print(f"Fox : {len(fox01)}")
+        nameNcode = input().strip()
+        nameNcode = nameNcode.replace("{", "").replace("}", "").replace('"', "").replace("'", "")
+        parts = nameNcode.split(":")
 
-    for code , name in sorted_cats:
+        name = parts[0].strip()
+        code = parts[1].strip()
+        cute[name] = code
+
+    havecat01 = False
+    havefox01 = False
+    for val in cute.values():
+        if val == "Cat01":
+            havecat01 = True
+        elif val == "Fox01":
+            havefox01 = True
+    if not havecat01:
+        cute["Garfield"] = "Cat01"
+    if not havefox01:
+        cute["Fubuki"] = "Fox01"
+
+    cats = {}
+    foxes = {}
+    for name , code in cute.items():
+        if code.startswith("Cat"):
+            cats[name] = code
+        elif code.startswith("Fox"):
+            foxes[name] = code
+    print(f"Cat : {len(cats)}")
+    print(f"Fox : {len(foxes)}")
+
+    sorted_cat = sorted(cats.items() , key=lambda x: x[1])
+    for name , code in sorted_cat:
         print(f"{name} : {code}")
-    for code , name in sorted_foxes:
+
+    sorted_fox = sorted(foxes.items() , key=lambda x: x[1])
+    for name , code in sorted_fox:
         print(f"{name} : {code}")
 
 main()
