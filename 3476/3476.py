@@ -6,11 +6,10 @@ def main():
     cute = {}
     for _ in range(n):
         nameNcode = input().strip()
-        nameNcode = nameNcode.replace("{", "").replace("}", "").replace('"', "").replace("'", "")
-        parts = nameNcode.split(":")
-
-        name = parts[0].strip()
-        code = parts[1].strip()
+        line = nameNcode.strip("{}")
+        parts = line.split(":")
+        name = parts[0].strip().replace('"', '').replace("'", "")
+        code = parts[1].strip().replace('"', '').replace("'", "")
         cute[name] = code
 
     havecat01 = False
