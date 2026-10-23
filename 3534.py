@@ -2,13 +2,24 @@
 
 def main():
     """filter"""
-    emp_dict = {}
-    bigdict = input()
-    clear = bigdict.replace("{" , "").replace("}" , "").replace('"', "").replace(":" , "")
-    parts = clear.split(", ")
-    num = parts[0].strip()
-    score = parts[1].strip()
-    emp_dict[num] = score
-    print(emp_dict)
+    dict_str = input()
+    need = float(input())
+    student = dict_str.replace('{', '').replace('}', '').strip()
+
+    filtered = []
+    if student:
+        for i in student.split(","):
+            uid_raw , score_raw = i.split(":")
+
+            uid = uid_raw.strip().strip("'").strip('"')
+            score = float(score_raw.strip())
+            if score >= need:
+                filtered.append((uid , score))
+    if not filtered:
+        print("Nope")
+    else:
+        filtered.sort()
+        for uid , score in filtered:
+            print(f"{uid}\t{score:.2f}")
 
 main()
